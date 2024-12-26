@@ -1,0 +1,314 @@
+<nav id="sidebar" class="border-end">
+    <div class="sidebar-header px-3 py-3 text-white">
+        <h4 class="mb-0">FRUITZO</h4>
+    </div>
+    <hr class="bg-white border-0 my-0 mx-3" style="height: 2px;" />
+
+    <ul class="nav flex-column p-0">
+        <li class="nav-item mx-2 my-1">
+            <a href="#" class="nav-link d-flex align-items-center px-3 py-2">
+                <i class="material-icons me-2">dashboard</i> Dashboard
+            </a>
+        </li>
+        <li class="nav-item mx-2 my-1">
+            <a class="nav-link d-flex align-items-center px-3 py-2" data-bs-toggle="collapse" href="#settingsSubmenu"
+                role="button" aria-expanded="false" aria-controls="settingsSubmenu">
+                <i class="material-icons me-2">person</i> User Management
+                <i class="material-icons ms-auto">expand_more</i>
+            </a>
+            <!-- Collapsible Submenu -->
+            <div class="collapse ms-3" id="settingsSubmenu">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/general']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> Add users
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/privacy']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> View users
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <!-- Staff Management -->
+        <li class="nav-item mx-2 my-1">
+            <a class="nav-link d-flex align-items-center px-3 py-2" data-bs-toggle="collapse" href="#staffSubmenu"
+                role="button" aria-expanded="false" aria-controls="staffSubmenu">
+                <i class="material-icons me-2">badge</i> Staff Management
+                <i class="material-icons ms-auto">expand_more</i>
+            </a>
+            <!-- Collapsible Submenu -->
+            <div class="collapse ms-3" id="staffSubmenu">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/general']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> Add staff
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/privacy']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> View staff
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/privacy']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> Privileges
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <!-- Product Management -->
+        <li class="nav-item mx-2 my-1">
+            <a class="nav-link d-flex align-items-center px-3 py-2" data-bs-toggle="collapse" href="#productSubmenu"
+                role="button" aria-expanded="false" aria-controls="productSubmenu">
+                <i class="material-icons me-2">inventory</i> Product Mgmt.
+                <i class="material-icons ms-auto">expand_more</i>
+            </a>
+            <!-- Collapsible Submenu -->
+            <div class="collapse ms-3" id="productSubmenu">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/general']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> Add product
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/privacy']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> View product
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/privacy']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> Inventory management
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/privacy']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> Discount & promotions
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <!-- Order Management -->
+        <li class="nav-item mx-2 my-1">
+            <a class="nav-link d-flex align-items-center px-3 py-2" data-bs-toggle="collapse" href="#orderSubmenu"
+                role="button" aria-expanded="false" aria-controls="orderSubmenu">
+                <i class="material-icons me-2">shopping_cart</i> Order Mgmt.
+                <i class="material-icons ms-auto">expand_more</i>
+            </a>
+            <!-- Collapsible Submenu -->
+            <div class="collapse ms-3" id="orderSubmenu">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/general']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> View orders
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/privacy']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> Order details
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <!-- Payment Management -->
+        <li class="nav-item mx-2 my-1">
+            <a class="nav-link d-flex align-items-center px-3 py-2" data-bs-toggle="collapse" href="#paymentSubmenu"
+                role="button" aria-expanded="false" aria-controls="paymentSubmenu">
+                <i class="material-icons me-2">payments</i> Payment Mgmt.
+                <i class="material-icons ms-auto">expand_more</i>
+            </a>
+            <!-- Collapsible Submenu -->
+            <div class="collapse ms-3" id="paymentSubmenu">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/general']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> View payments
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/privacy']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> Refund Management
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/privacy']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> Payment gateway settings
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <!-- Shipping Management -->
+        <li class="nav-item mx-2 my-1">
+            <a class="nav-link d-flex align-items-center px-3 py-2" data-bs-toggle="collapse" href="#shippingSubmenu"
+                role="button" aria-expanded="false" aria-controls="shippingSubmenu">
+                <i class="material-icons me-2">local_shipping</i> Shipping Mgmt.
+                <i class="material-icons ms-auto">expand_more</i>
+            </a>
+            <!-- Collapsible Submenu -->
+            <div class="collapse ms-3" id="shippingSubmenu">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/general']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> Shipping rates
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/privacy']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> Track shipment
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <!-- Sales Management -->
+        <li class="nav-item mx-2 my-1">
+            <a class="nav-link d-flex align-items-center px-3 py-2" data-bs-toggle="collapse" href="#salesSubmenu"
+                role="button" aria-expanded="false" aria-controls="salesSubmenu">
+                <i class="material-icons me-2">analytics</i> Reports
+                <i class="material-icons ms-auto">expand_more</i>
+            </a>
+            <!-- Collapsible Submenu -->
+            <div class="collapse ms-3" id="salesSubmenu">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/general']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> Sales reports
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/privacy']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> Customer Reports
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/privacy']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> Product Performance
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <!-- Content Management -->
+        <li class="nav-item mx-2 my-1">
+            <a class="nav-link d-flex align-items-center px-3 py-2" data-bs-toggle="collapse" href="#contentSubmenu"
+                role="button" aria-expanded="false" aria-controls="contentSubmenu">
+                <i class="material-icons me-2">public</i> Content Mgmt.
+                <i class="material-icons ms-auto">expand_more</i>
+            </a>
+            <!-- Collapsible Submenu -->
+            <div class="collapse ms-3" id="contentSubmenu">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/general']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> Banner Management
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/privacy']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> Pages Management
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/privacy']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> SEO Management
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <!-- Settings Management -->
+        <li class="nav-item mx-2 my-1">
+            <a class="nav-link d-flex align-items-center px-3 py-2" data-bs-toggle="collapse" href="#settingsSubmenu"
+                role="button" aria-expanded="false" aria-controls="settingsSubmenu">
+                <i class="material-icons me-2">settings</i> Settings
+                <i class="material-icons ms-auto">expand_more</i>
+            </a>
+            <!-- Collapsible Submenu -->
+            <div class="collapse ms-3" id="settingsSubmenu">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/general']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> General Settings
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/privacy']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> Notification Settings
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <!-- Security Management -->
+        <li class="nav-item mx-2 my-1">
+            <a class="nav-link d-flex align-items-center px-3 py-2" data-bs-toggle="collapse" href="#securitySubmenu"
+                role="button" aria-expanded="false" aria-controls="securitySubmenu">
+                <i class="material-icons me-2">security</i> Security Mgmt.
+                <i class="material-icons ms-auto">expand_more</i>
+            </a>
+            <!-- Collapsible Submenu -->
+            <div class="collapse ms-3" id="securitySubmenu">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/general']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> Login History
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center px-3 py-2" [routerLink]="['/settings/privacy']"
+                            routerLinkActive="active">
+                            <i class="material-icons me-2">radio_button_checked</i> Password Management
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="nav-item mx-2 my-1">
+            <a href="#" class="nav-link d-flex align-items-center px-3 py-2">
+                <i class="material-icons me-2">logout</i> Logout
+            </a>
+        </li>
+    </ul>
+</nav>
